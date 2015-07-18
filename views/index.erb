@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tamper Checker</title>
+  	<script type="text/javascript" src="js/sha1.js"></script>
+		<script type="text/javascript" src="js/tamper_check.js"></script>
+  </head>
+	<body>
+		<h1>Tamper Check</h1>
+		<img id="image" width=75% height=75%>
+		<p>client-side sha1: <span id="chash"></span></p>
+		<p>server-side sha1: <span id="shash" style="color: green"><%= shash %></span></p>
+	</body>
+</html>
